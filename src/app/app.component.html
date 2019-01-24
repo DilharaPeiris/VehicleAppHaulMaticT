@@ -1,0 +1,107 @@
+<div class="row mt-0">
+  <div class="col-md-12 ">
+    <h1>{{title}}</h1>
+    <form class="card p-2 bg-light ">
+      <div class="row">
+          <div class="col-md-3">
+              <label for="model" id="label">Org ID</label>
+              <input class="form-control form-control-sm   "  name="orgId" type="text" >{{orgid}}
+            </div>
+        <div class="col-md-3">
+          <label for="model" id="label">AbsoluteOwner</label>
+          <input class="form-control form-control-sm   "  name="AbsoluteOwner" type="text" [(ngModel)]="vehicleVM.sbsoluteOwner">
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">Barcode</label>
+          <input class="form-control form-control-sm   "  name="barcode" type="text" [(ngModel)]="vehicleVM.barcode" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">brand</label>
+          <input class="form-control form-control-sm   "  name="brand" type="text" [(ngModel)]="vehicleVM.brand">
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">build Year</label>
+          <input class="form-control form-control-sm   "  name="buildYear" type="text"[(ngModel)]="vehicleVM.buildYear" >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="model" id="label">chasis Number</label>
+          <input class="form-control form-control-sm   "  name="chasisNumber" type="text" [(ngModel)]="vehicleVM.chasisNumber" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">class Of Vehicle</label>
+          <input class="form-control form-control-sm   "  name="classOfVehicle" type="text" [(ngModel)]="vehicleVM.classOfVehicle">
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">country Of Origin</label>
+          <input class="form-control form-control-sm   "  name="countryOfOrigin" type="text" [(ngModel)]="vehicleVM.countryOfOrigin" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">cylinder Capacity</label>
+          <input class="form-control form-control-sm   "  name="cylinderCapacity" type="text" [(ngModel)]="vehicleVM.cylinderCapacity">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="model" id="label">email</label>
+          <input class="form-control form-control-sm   "  name="email" type="text" [(ngModel)]="vehicleVM.email">
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">emailis primary</label>
+          <!-- <input class="form-control form-control-sm   "  name="emailisprimary" type="text" > -->
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">engineNumber</label>
+          <input class="form-control form-control-sm   "  name="engineNumber" type="text" [(ngModel)]="vehicleVM.engineNumber">
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">first Reg Date</label>
+          <input class="form-control form-control-sm   "  name="firstRegDate" type="text" [(ngModel)]="vehicleVM.firstRegDate" >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="model" id="label">fuel Type</label>
+          <input class="form-control form-control-sm   "  name="fuelType" type="text" [(ngModel)]="vehicleVM.fuelType" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">image</label>
+          <input class="form-control form-control-sm   "  name="image" type="text" [(ngModel)]="vehicleVM.image">
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">imei</label>
+          <input class="form-control form-control-sm   "  name="imei" type="text" [(ngModel)]="vehicleVM.imei" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">internalRefNum</label>
+          <input class="form-control form-control-sm   "  name="internalRefNum" type="text" [(ngModel)]="vehicleVM.internalRefNum">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="model" id="label">make</label>
+          <input class="form-control form-control-sm   "  name="make" type="text" [(ngModel)]="vehicleVM.make" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">mobileNumber</label>
+          <input class="form-control form-control-sm   "  name="mobileNumber" type="text" [(ngModel)]="vehicleVM.mobileNumber" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">model</label>
+          <input class="form-control form-control-sm   "  name="model" type="text" [(ngModel)]="vehicleVM.model" >
+        </div>
+        <div class="col-md-3">
+          <label for="model" id="label">odo Meter Reading</label>
+          <input class="form-control form-control-sm   "  name="odoMeterReading" type="text" [(ngModel)]="vehicleVM.odoMeterReading">
+        </div>
+      </div>
+      <div>
+          <button type="submit" class="btn btn-sm btn-primary" (click)="addVehicleRecord()"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="submit" class="btn btn-sm btn-primary" (click)="viewData()"><i class="fa fa-dot-circle-o"></i> Veiw </button>
+
+        </div>
+    </form>
+  </div>
+
+</div>
